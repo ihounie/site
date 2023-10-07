@@ -1,19 +1,15 @@
 ---
 layout: default
-title: Home
+title: Ignacio Hounie Homepage
 ---
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
   <p>
-    > I'm a 2nd year Ph.D. student at the <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>, where I mostly think about optimization theory, signal processing and machine learning with <a href="https://alelab.seas.upenn.edu/alejandro-ribeiro/" target="_blank">Prof. Ribeiro</a>.
-  </p>
-<p>
-    Before graduate school, I spent some time at <a href="https://sites.google.com/site/anshulkundaje/" target="_blank">Stanford's Kundaje Lab</a>, working on chromatin accessibility prediction and genomic motif discovery. I was also a summer intern at  <a href="https://home.cern/" target="_blank">CERN</a>, contributing to the  <a href="https://opendata.cern.ch/docs/about-cms" target="_blank"> CMS Open Data </a> initiative with Dr. Lassila-Perini.
-  </p> 
-    <p>
-    I'm originally from Montevideo, Uruguay, where I obtained a BSc. in Electrical Engineering from  <a href="https://www.fing.edu.uy/" target="_blank">UdelaR</a> . During my undergrad I was a signal processing intern at  <a href="https://www.proteantecs.com/" target="_blank"> ProteanTecs</a> , a chip predictive maintenance start-up, and before that, I was a software developer at  <a href="https://research.ibm.com/collaborate/cloud-innovation-lab" target="_blank">IBM</a> . 
-  </p>
+    > I'm a 3rd year Ph.D. student at the <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>, advised by <a href="https://alelab.seas.upenn.edu/alejandro-ribeiro/" target="_blank">Prof. Ribeiro</a>.
+    I am broadly interested in machine learning, signal processing and optimization.
+    I have spent the last few years developing tools for learning under constraints. 
+    If you are not entirely sure about what Constrained Learning is, and why it is relevant, I encourage you to read this.
     
     <p>
     3401 Walnut, Room 405b <br>
@@ -27,8 +23,7 @@ title: Home
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
+  <p>Full list of publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
   </p>
 
   <ul class="tab-nav">
@@ -113,41 +108,6 @@ title: Home
 </div>
 
 
-<!-- ========== PROJECTS ==========  -->
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" height=250/>
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-
-</div>
-
-
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
   <h4>Vitæ</h4>
@@ -177,81 +137,9 @@ title: Home
 <!-- ========== MISC ========== -->
 <div class="docs-section" id="misc">
   <h4>Miscelaneous</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#Uruguay">Uruguay</div></li>
-    <li><div class="button" data-ref="#Water">Water</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="Uruguay">
-      <p>Some stuff I like about my country. </p>
-      {% assign selected_misc = site.data.misc.misc | where: "selected", "n" %}
-      {% for mis in selected_misc %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ mis.url }}">
-                    <img src="{{ mis.thumbnail }}" class="u-max-full-width" width=300 />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ mis.title }}</b> <br/>
-                  {{ mis.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="Water">
-      <p>Water is my natural environment.</p>
-      {% assign selected_misc = site.data.misc.misc | where: "selected", "y" %}
-      {% for mis in selected_misc %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ mis.url }}">
-                    <img src="{{ mis.thumbnail }}" class="u-max-full-width" width=300 />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ mis.title }}</b> <br/>
-                  {{ mis.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
 </div>
 
 <div class="docs-section" id="template">
-    The blueprint for this website can be found in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
+    The blueprint for this website was shamelessly taken from Juan Elenter's, who in turn took it from Martin Zaveski, and can be found in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
     Feel free to use it. 
 </div>

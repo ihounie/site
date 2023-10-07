@@ -1,8 +1,8 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /~elenter
+baseurl: /~ihounie
 
 collections:
   projects:
-    output: true
+    output: false

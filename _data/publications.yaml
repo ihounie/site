@@ -1,8 +1,59 @@
 papers:
 
-  - title: "A Lagrangian Duality Approach to Active Learning"
-    authors: "<b>Juan Elenter</b>, Navid NaderiAlizadeh, Alejandro Ribeiro"
-    venue: "NeurIPS 2022."
-    paper_pdf: "https://arxiv.org/abs/2202.04108"
-    code: "https://github.com/juanelenter/ALLY"
+  - title: "Resilient Constrained Learning"
+    authors: "<b>Ignacio Hounie</b>, Alejandro Ribeiro, Luiz F. O. Chamon"
+    venue: "To Appear at NeurIPS 2023."
+    paper_pdf: "https://arxiv.org/abs/2306.02426"
     selected: y
+
+  - title: "Automatic Data Augmentation via Invariance Constrained Learning"
+    authors: "<b>Ignacio Hounie</b>,  Luiz F. O. Chamon, Alejandro Ribeiro"
+    venue: "ICML 2023."
+    paper_pdf: "https://arxiv.org/abs/2306.02426"
+    code: "https://github.com/ihounie/daug"
+    selected: y
+
+    - title: "Neural Networks with Quantization Constraints"
+    authors: "<b>Ignacio Hounie</b>, Juan Elenter, Alejandro Ribeiro"
+    venue: "ICASSP 2023."
+    paper_pdf: "https://arxiv.org/abs/2210.15623"
+    code: "https://github.com/ihounie/pd-qat"
+    selected: y
+
+    - title: "Image inpainting using patch consensus and DCT priors."
+    authors: "Ignacio Ramírez Paulino, <b>Ignacio Hounie</b>"
+    venue: "Image Processing On Line 2021."
+    paper_pdf: "https://www.ipol.im/pub/art/2021/286/"
+    code: "https://github.com/nacho-pancho/paco-framework"
+    selected: y
+
+    - title: "DCASE-models: a Python library for computational environmental sound analysis using deep-learning models"
+    authors: "Pablo Zinemanas, <b>Ignacio Hounie</b>, Pablo Cancela, Frederic Font Corbera, Martín Rocamora, Xavier Serra"
+    venue: "DCASE 2020."
+    paper_pdf: "https://repositori.upf.edu/handle/10230/45641"
+    code: "https://github.com/MTG/DCASE-models"
+    selected: y
+
+    - title: "Paco and paco-dct: Patch consensus and its application to inpainting"
+    authors: "Ignacio Ramírez Paulino, <b>Ignacio Hounie</b>"
+    venue: "ICASSP 2020."
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/9053953/"
+    selected: n 
+
+  - title: "Something old, something new, something borrowed: Evaluation of different neural network architectures for genomic prediction."
+    authors:  Maria Inés Fariello, Lucía Arboleya, Diego Belzarena, Leonardo De Los Santos, Juan Elenter, Guillermo Etchebarne, <b>Ignacio Hounie</b>, Gabriel Ciappesoni, Elly Navajas, Federico Lecumberry
+    venue: "Plant & Animal Genome Conference 2023"
+    paper_pdf: "https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/36832"
+    selected: n    
+
+    - title: "Graph Neural Networks for genome enabled prediction of complex traits."
+    authors:  <b>Ignacio Hounie</b>, Juan Elenter, Guillermo Etchebarne, María Inés Fariello, Federico Lecumberry"
+    venue: "Probabilistic Modeling in Genomics 2021."
+    paper_pdf: "https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/36832"
+    selected: n  
+
+    - title: "On two dimensional mappings of SNP marker data and CNNs: Overcoming the limitations of existing methods using Fermat distance."
+    authors: "Juan Elenter, Guillermo Etchebarne, <b>Ignacio Hounie</b>, María Inés Fariello, Federico Lecumberry"
+    venue: "Probabilistic Modeling in Genomics 2021."
+    paper_pdf: "https://www.colibri.udelar.edu.uy/jspui/handle/20.500.12008/36813"
+    selected: n   
