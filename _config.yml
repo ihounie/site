@@ -2,7 +2,3 @@ source:      .
 destination: ./_site
 includes:    ./_includes
 baseurl: /~ihounie
-
-collections:
-  projects:
-    output: false
